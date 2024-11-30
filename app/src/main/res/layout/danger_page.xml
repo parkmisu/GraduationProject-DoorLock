@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 화재 감지 시간 텍스트 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:textSize ="18dp"
+        android:id="@+id/fire_time"
+        android:visibility="gone"/>
+    <!--이미지 출력 위치를 맞추기 위한 15dp 빈 공간 생성-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:gravity="center"
+        android:textSize ="1dp"
+        android:id="@+id/blank"/>
+    <!-- 화재 발생 알람 이미지 -->
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="93dp"
+        android:id="@+id/fire_image"
+        android:src="@drawable/fire_image"
+        android:scaleType="centerInside"
+        android:visibility="gone"
+        android:background="@android:color/transparent"/>
+    <!-- 화재감지 알람 삭제 버튼 -->
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="35.5dp"
+        android:id="@+id/fireok_btn"
+        android:src="@drawable/fireok_image"
+        android:scaleType="centerInside"
+        android:visibility="gone"
+        android:background="@android:color/transparent"/>
+    <!-- 출입 기록 전체 삭제 버튼 -->
+    <ImageButton
+        android:layout_width="35.5dp"
+        android:layout_height="35.5dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/all_del"
+        android:scaleType="centerInside"
+        android:id="@+id/grid_delete_btn"
+        android:background="@android:color/transparent"/>
+    <!-- 출입 기록 출력 GridView -->
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="auto_fit"
+        app:layout_constraintTop_toTopOf="parent" />
+</LinearLayout>

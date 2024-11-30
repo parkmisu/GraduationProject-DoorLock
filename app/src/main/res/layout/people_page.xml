@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent">
+
+    <!--사용자 등록 버튼  -->
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/enroll_btn"
+        android:scaleType="centerInside"
+        android:src="@drawable/enroll_image"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        android:layout_marginBottom="5dp"/>
+    <!--사용자 확인 버튼  -->
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/inout_btn"
+        android:scaleType="centerInside"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/list_image"
+        android:background="@android:color/transparent"
+        android:orientation="vertical"/>
+
+</LinearLayout>

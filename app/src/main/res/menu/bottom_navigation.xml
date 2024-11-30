@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_1"
+        android:icon="@drawable/setting"
+        android:title="setting"
+        android:checked="true"/>
+
+    <item
+        android:id="@+id/navigation_2"
+        android:icon="@drawable/people"
+        android:title="people"
+        android:checked="false"/>
+
+    <item
+        android:id="@+id/navigation_3"
+        android:icon="@drawable/danger"
+        android:title="danger"
+        android:checked="false"/>
+</menu>
